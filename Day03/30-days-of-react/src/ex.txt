@@ -1,0 +1,50 @@
+O que é um módulo?
+Modulos são uma ou mais funções prontas que podem ser exportadas e importadas.
+
+O que é pacote?
+Conjunto de Modulos
+
+Qual é a diferença entre um módulo e um pacote.
+Um módulo é uma unidade de código individual, como um arquivo, usado para encapsular funcionalidades. Um pacote é uma coleção de módulos relacionados organizados em uma estrutura de diretório hierárquica.
+
+O que é NPM?
+É um gerenciador de pacotes. Permite criar, usar e distruibuir pacotes.
+
+O que é Webpack?
+
+O Webpack é uma ferramenta de construção (bundler) que empacota recursos da web, como JavaScript, CSS e imagens, para otimização e entrega eficiente em aplicativos web.
+Básicamente é uma construção inicial da aplicação web.
+
+Como você cria um novo projeto React?
+seguindo os comandos npx create-react-app nome-projeto (se ja tiver o construtor instalado, não precisa do npx)
+
+Quais são os arquivos e pastas dentro de uma pasta de projeto (package.json, package-lock.json ou yarn.lock, .gitignore,node_modules e public)?
+node_modules – armazena todos os pacotes de nós necessários dos aplicativos React.
+
+Público
+
+index.html – o único arquivo HTML que temos em todo o aplicativo
+manifest.json - é usado para tornar o aplicativo um aplicativo da web progressivo
+
+src
+
+App.css, index.css – são arquivos CSS diferentes
+index.js - um arquivo que permite conectar todos os componentes com index.html
+App.js – Um arquivo onde normalmente importamos a maioria dos componentes de apresentação
+serviceWorker.js: é usado para adicionar recursos progressivos de aplicativos da web
+setupTests.js – para escrever casos de teste
+robots.txt - informações, se o site permitir web scraping
+package.json- Lista de pacotes que os aplicativos usam
+
+.gitignore - O padrão React vem com o git iniciado, e o .gitingore permite que arquivos e pastas não sejam enviados para o GitHub
+
+README.md - arquivo Markdown para escrever documentação
+
+Yarn.lock ou package-lock.json - um meio de bloquear a versão do pacote
+
+
+Qual é o seu editor de código favorito (acredito que seja o Visual Studio Code)?
+Visual Studio Code
+
+Adicione diferentes extensões do Visual Studio Code para melhorar sua produtividade (por exemplo, mais bonito, ESLint etc).
+Tente criar um módulo personalizado diferente em um arquivo diferente e importe-o para index.js.
