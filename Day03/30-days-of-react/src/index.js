@@ -1,98 +1,75 @@
 // index.js
 import React from 'react'
 import ReactDOM from 'react-dom'
-// To get the root element from the HTML document
-import gato from './images/gato.jpg'
-// JSX element, header
-const welcome = 'Welcome to 30 Days Of React'
-const title = 'Getting Started React'
-const subtitle = 'JavaScript Library'
-const author = {
-  firstName: 'Gatinho',
-  lastName: 'Japonês',
-}
-const date = 'Oct 2, 2020'
+
+// import images
+import logoCss from './images/css_logo.png'
+import logoHtml from './images/html_logo.png'
+import logoJS from './images/JS_logo.png'
+import logoReact from './images/react_logo.png'
+import breno from './images/breno.jpg'
 
 // JSX element, header
 const header = (
   <header>
-    <div className="header-wrapper">
-      <h1>{welcome}</h1>
-      <h2>{title}</h2>
-      <h3>{subtitle}</h3>
-      <p>
-        Instructor: {author.firstName} {author.lastName}
-      </p>
-      <small>Date: {date}</small>
+    <div className="title">
+      <h3>Front End Technologies</h3>
+    </div>
+    <div className="logos-container">
+      <img className="logo" src={logoCss} alt="logo CSS" />
+      <img className="logo" src={logoHtml} alt="logo HTML" />
+      <img className="logo" src={logoJS} alt="logo JS" />
+      <img className="logo" src={logoReact} alt="logo React" />
     </div>
   </header>
 )
-
-const numOne = 3
-const numTwo = 2
-
-const result = (
-  <p>
-    {numOne} + {numTwo} = {numOne + numTwo}
-  </p>
-)
-
-const yearBorn = 2019
-const currentYear = new Date().getFullYear()
-const age = currentYear - yearBorn
-const personAge = (
-  <p>
-    {' '}
-    {author.firstName} {author.lastName} is {age} years old
-  </p>
-)
-
-// JSX element, main
-const techs = ['HTML', 'CSS', 'JavaScript']
-const techsFormatted = techs.map((tech) => <li>{tech}</li>)
-
-const user = (
-  <div>
-    <img src={gato} alt="gato" />
+const forms = (
+  <div className="forms">
+    <h1>SUBSCRIBE</h1>
+    <p>Sign up with your email address to receive news and updates</p>
+    <div className="forms-input">
+      <input
+        className="form-field"
+        type="text"
+        placeholder="First Name"
+      ></input>
+      <input className="form-field" type="text" placeholder="Last Name"></input>
+      <input className="form-field" type="text" placeholder="Email"></input>
+    </div>
+    <button>Subscribe</button>
   </div>
 )
 
-// JSX element, main
-const main = (
-  <main>
-    <div className="main-wrapper">
-      <p>
-        Prerequisite to get started{' '}
-        <strong>
-          <em>react.js</em>
-        </strong>
-        :
-      </p>
-      <ul>{techsFormatted}</ul>
-      {result}
-      {personAge}
-      {user}
+const user = (
+  <div className="user-card">
+    <div className="profile">
+      <img src={breno} alt="user breno" />
+      <h1>Breno Soares</h1>
+      <p>Front-end Developer</p>
     </div>
-  </main>
-)
-
-const copyRight = 'Copyright 2020'
-
-// JSX element, footer
-const footer = (
-  <footer>
-    <div className="footer-wrapper">
-      <p>{copyRight}</p>
+    <h1 className="title-skill">skills</h1>
+    <div className="list-skills">
+      <p className="skill">HTML</p>
+      <p className="skill">CSS</p>
+      <p className="skill">JS</p>
+      <p className="skill">Python</p>
+      <p className="skill">Django</p>
+      <p className="skill">Flask</p>
+      <p className="skill">React</p>
+      <p className="skill">React</p>
+      <p className="skill">PostgreSQL</p>
+      <p className="skill">GIT</p>
+      <p className="skill">GitHub</p>
     </div>
-  </footer>
+  </div>
 )
 
 // JSX element, app
 const app = (
   <div className="app">
     {header}
-    {main}
-    {footer}
+    {forms}
+    {user}
   </div>
 )
 
