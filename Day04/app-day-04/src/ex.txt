@@ -1,0 +1,36 @@
+Qual é a diferença entre uma função regular e uma função de seta?
+Além da sintaxe da declaração entre as duas funçõesm, elas se diferenciam-se no 'this' e no seus 'argumentos'. No caso a função regular
+possui seu próprio this, o que signifca que não precisa utiliza-lo, já a função de seta herda de seu pai.   
+
+O que é um componente React?
+É um código pequeno e reutilizavel responsavel por uma parte da interface do usuário.
+
+Como você faz um componente funcional React?
+A criação de um componente funcional, como o nome diz, é utilziando função JS.
+
+Qual é a diferença entre uma função JavaScript pura e um componente funcional?
+Uma função JS pode ser utilizada para qualquer propósito, porem um componente funcional tem o objetivo de ser um código reutilizável direcionado à IU.
+Além disso em um componente funcional não precisa indicar o retorno da função, é explicito.
+
+Quão pequeno é um componente React?
+É do tamanho de que só retorna um único HTML como JSX.
+
+Podemos criar um botão ou componente de campo de entrada?
+Sim, como um componente pequeno.
+
+Faça um componente Button reutilizável.
+`const Button = () => <button>Button Exemplo</button>`
+
+Faça um componente InputField reutilizável.
+`const InputField = () =>   <input type="text" id="fname" name="fname" placeholder='First Name'>`
+
+Faça um componente de caixa de alerta reutilizável com um elemento pai div e um elemento filho p do div (caixa de alerta de aviso, caixa de alerta de sucesso).
+`const AlertBox = ({ type, message }) => {
+const alertClass = `alert-box ${type === 'success' ? 'success' : 'warning'}`;
+
+  return (
+    <div className={alertClass}>
+      <p>{message}</p>
+    </div>
+  );
+};`
