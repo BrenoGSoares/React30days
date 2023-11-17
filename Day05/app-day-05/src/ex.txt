@@ -1,0 +1,26 @@
+O que são props em um componente React?
+Props é uma palavra-chave reservada do react que significa propriedades e utilizamos
+para passar dados de um componente para outro, como do componente pai para o componente filho.
+
+Como você acessa adereços em um componente React?
+Passando como parâmetro da função do componente
+exemplo:
+const User = (props) => {
+  return (
+    <div>
+      <h1>
+        {props.firstName}
+      </h1>
+    </div>
+  )
+}
+<User firstName = 'Asabeneh'/>
+
+Que tipos de dados podemos passar como acessórios para componentes?
+Strings, Numbers, Booleans, Arrays, Objects, Functions
+
+O que é um propTypes?
+O pacote propTypes nos ajuda a atribuir os tipos de dados dos props que passamos para um componente.
+
+O que é um propTypes padrão?
+O defaultProps pode ser usado quando queremos ter alguns tipos de prop padrão para um componente
