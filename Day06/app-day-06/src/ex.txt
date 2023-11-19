@@ -1,0 +1,11 @@
+Por que você precisa mapear um array?
+Para facilitar, e organizar, a construção de um componente JSX
+
+Por que precisamos de chaves durante o mapeamento de um array?
+As chaves auxiliam o react a compreender quais itens foram alterados, adicionados ou removidos.
+
+Qual a importância de desestruturar seu código?
+A desestruturação, quando usada apropriadamente, contribui para um código mais eficiente, legível e fácil de manter.
+
+A desestruturação torna seu código limpo e fácil de ler?
+Sim, A desestruturação simplifica a extração de dados de objetos, tornando o código mais legível e conciso.
