@@ -1,0 +1,55 @@
+Como você escreve uma função JavaScript pura.
+function nomeDaFunção(){
+    //code
+}
+
+O que é herança e como você cria um filho de uma classe pai?
+Herança, como o nome diz, é a possibilidade de uma classe filho pegar metodos e atributos de uma classe pai
+// Classe pai
+class Animal {
+  constructor(nome) {
+    this.nome = nome;
+  }
+
+  fazerSom() {
+    console.log("Fazendo algum som...");
+  }
+}
+
+// Classe filho  que herda de Animal
+class Cachorro extends Animal {
+  constructor(nome, raca) {
+    super(nome); 
+    this.raca = raca;
+  }
+
+  fazerSom() {
+    console.log("Au Au!");
+  }
+}
+
+
+O que é um componente React baseado em classe?
+Um componente React baseado em classe é uma forma de definir componentes no React usando a sintaxe de classes
+
+Qual é a diferença entre o componente React funcional e o componente React baseado em classe?
+O componente baseado em classe permite utilizar a herança
+
+Quando usar componentes baseados em classes?
+Em projetos mais antigos que ainda não foram migrados para usar Hooks, ou ao trabalhar em projetos que fazem extenso uso de 
+herança de componentes.
+
+Que tipo de componente você usa com mais frequência? componente funcional ou baseado em classe
+Casos de uso de componentes baseados em classe:
+Projetos mais antigos que foram desenvolvidos antes da introdução dos Hooks.
+Situações em que a herança é uma parte crucial da arquitetura.
+
+Preferência entre componente funcional e baseado em classe:
+Atualmente, a tendência é favorecer componentes funcionais com Hooks devido à sua sintaxe mais concisa, melhor legibilidade e maior flexibilidade. No entanto, em alguns casos, componentes baseados em classe podem ser necessários, especialmente em projetos mais antigos.
+Ciclo de Vida do React:
+
+O que é o ciclo de vida do React? (ainda não coberto)?
+O ciclo de vida do React refere-se às diferentes fases que um componente passa desde a sua inicialização até a sua remoção do DOM. 
+
+O que é estado no React? (ainda não coberto)
+O estado no React refere-se aos dados que um componente pode manter e atualizar ao longo do tempo. 
